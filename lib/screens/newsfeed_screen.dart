@@ -9,21 +9,21 @@ class NewsfeedScreen extends StatelessWidget {
     return ListView(
       children: const [
         NewsfeedCard(
-          userName: "Doctor Doom",
-          postContent: "Hell answers to me, For i am DOOM! ⚡",
-          date: "1 day ago",
-          numOfLikes: 500,
-          hasImage: true,
-          profileImage: 'assets/images/pfpdoom.jpg',
-          postImage: 'assets/images/postdoom.jpg',
+          userName: "BATUMBAKAL",
+          postContent: "NO TO PAX SILICA NGANIIIIII.",
+          date: "1 hour ago",
+          numOfLikes: 150,
+          profileImage: 'assets/images/pfp.jpg',
         ),
 
         NewsfeedCard(
-          userName: "Lightning McQueen",
-          postContent: "Speed. I am speed. Ka-chow! 🏎️",
-          date: "2 days ago",
+          userName: "xo_shiri",
+          postContent: "no to pax silica hey #ano na goverment?",
+          date: "2 hours ago",
           numOfLikes: 250,
-          profileImage: 'assets/images/mcqueen.jpg',
+          hasImage: true,
+          profileImage: 'assets/images/pfp.jpg',
+          postImage: 'assets/images/pax.jpg',
         ),
       ],
     );

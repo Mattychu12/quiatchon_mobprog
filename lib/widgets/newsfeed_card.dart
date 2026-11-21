@@ -44,9 +44,7 @@ class NewsfeedCard extends StatelessWidget {
                       ? const Icon(Icons.person)
                       : null,
                 ),
-
                 SizedBox(width: ScreenUtil().setWidth(10)),
-
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -73,7 +71,6 @@ class NewsfeedCard extends StatelessWidget {
                     ),
                   ],
                 ),
-
                 const Spacer(),
                 const Icon(Icons.more_horiz),
               ],
@@ -111,7 +108,6 @@ class NewsfeedCard extends StatelessWidget {
                     color: fbDarkPrimary,
                   ),
                 ),
-
                 TextButton.icon(
                   onPressed: () {},
                   icon: const Icon(
@@ -120,7 +116,6 @@ class NewsfeedCard extends StatelessWidget {
                   ),
                   label: const Text('Comment'),
                 ),
-
                 TextButton.icon(
                   onPressed: () {},
                   icon: const Icon(
@@ -136,7 +131,7 @@ class NewsfeedCard extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 15,
-                  child: Icon(Icons.person, size: 18),
+                  backgroundImage: AssetImage('assets/images/meme.jpg'),
                 ),
                 SizedBox(width: ScreenUtil().setWidth(10)),
                 Expanded(
