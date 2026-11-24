@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quiatchon_mobprog/constants.dart';
 import 'package:quiatchon_mobprog/screens/newsfeed_screen.dart';
+import 'package:quiatchon_mobprog/screens/notification_screen.dart';
 import 'package:quiatchon_mobprog/widgets/custom_text.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -23,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
         shadowColor: fbTextColorWhite,
         elevation: 2,
         title: CustomText(
-          text: 'Facebook',
+          text: _selectedIndex == 0 ? 'Facebook' : 'Notifications',
           fontSize: ScreenUtil().setSp(25),
           color: fbPrimary,
           fontFamily: 'Klavika',
@@ -35,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         controller: _pageController,
         children: const <Widget>[
           NewsfeedScreen(),
+          NotificationScreen(),
         ],
         onPageChanged: (page) {
           setState(() {
@@ -69,5 +71,11 @@ class _HomeScreenState extends State<HomeScreen> {
     });
 
     _pageController.jumpToPage(value);
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 }

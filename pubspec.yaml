@@ -1,3 +1,4 @@
+
 name: quiatchon_mobprog
 description: "A new Flutter project."
 publish_to: 'none'
@@ -17,16 +18,17 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 
 flutter:
+  uses-material-design: true
+
   assets:
     - assets/icons/
     - assets/images/
+
   fonts:
     - family: Klavika
       fonts:
         - asset: assets/fonts/KlavikaBoldBold.otf
+
     - family: Frutiger
       fonts:
         - asset: assets/fonts/FrutigerLTStd-Roman.otf
-  uses-material-design: true
-
-

@@ -131,7 +131,7 @@ class NewsfeedCard extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 15,
-                  backgroundImage: AssetImage('assets/images/meme.jpg'),
+                  backgroundImage: AssetImage('assets/images/pfpdoom.jpg'),
                 ),
                 SizedBox(width: ScreenUtil().setWidth(10)),
                 Expanded(
